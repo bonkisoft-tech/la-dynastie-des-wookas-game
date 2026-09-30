@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Copyright & Intellectual Property — La Dynastie des Wookas</title>
+
+    <meta
+        name="description"
+        content="Copyright and intellectual property information for La Dynastie des Wookas — The Game."
+    >
+
+    <meta name="theme-color" content="#07130f">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Georgia, "Times New Roman", serif;
+            background:
+                radial-gradient(
+                    circle at 50% 0%,
+                    rgba(33, 120, 91, 0.18),
+                    transparent 38%
+                ),
+                linear-gradient(
+                    180deg,
+                    #07130f 0%,
+                    #081713 50%,
+                    #050b09 100%
+                );
+            color: #f4f1e7;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(4, 12, 9, 0.82);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .nav-inner {
+            width: min(1180px, calc(100% - 40px));
+            min-height: 72px;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            width: 120px;
+            height: auto;
+        }
+
+        .back-link {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.72);
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+        }
+
+        /* =========================
+           MAIN
+        ========================== */
+
+        main {
+            width: min(900px, calc(100% - 40px));
+            margin: auto;
+            padding: 150px 0 90px;
+        }
+
+        .eyebrow {
+            margin-bottom: 16px;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+
+            color: #bdb7a3;
+        }
+
+        h1 {
+            max-width: 800px;
+
+            font-size: clamp(38px, 6vw, 64px);
+            line-height: 1.05;
+            font-weight: 400;
+
+            margin-bottom: 22px;
+        }
+
+        .intro {
+            max-width: 760px;
+
+            font-size: 18px;
+            color: rgba(255,255,255,0.72);
+
+            margin-bottom: 60px;
+        }
+
+        /* =========================
+           CONTENT
+        ========================== */
+
+        .content-section {
+            margin-bottom: 54px;
+            padding-top: 10px;
+        }
+
+        .content-section h2 {
+            margin-bottom: 15px;
+
+            font-size: 28px;
+            line-height: 1.15;
+            font-weight: 400;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: rgba(255,255,255,0.68);
+            font-size: 16px;
+        }
+
+        .legal-card {
+            margin: 25px 0 10px;
+            padding: 26px 28px;
+
+            background: rgba(255,255,255,0.035);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .legal-card strong {
+            color: #ffffff;
+        }
+
+        .notice {
+            margin-top: 20px;
+            padding: 22px 24px;
+
+            border-left: 2px solid rgba(255,255,255,0.22);
+
+            background: rgba(255,255,255,0.025);
+            color: rgba(255,255,255,0.60);
+
+            font-size: 14px;
+        }
+
+        .copyright-line {
+            margin-top: 12px;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            letter-spacing: 1px;
+
+            color: rgba(255,255,255,0.48);
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            padding: 42px 20px;
+
+            background: #030806;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .footer-inner {
+            width: min(1180px, 100%);
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 25px;
+        }
+
+        .footer-logo {
+            width: 125px;
+        }
+
+        .footer-copy {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            letter-spacing: 0.8px;
+
+            color: rgba(255,255,255,0.40);
+
+            text-align: right;
+        }
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 700px) {
+
+            .nav-inner {
+                min-height: 64px;
+            }
+
+            .brand-logo {
+                width: 105px;
+            }
+
+            main {
+                padding-top: 120px;
+            }
+
+            .intro {
+                font-size: 17px;
+            }
+
+            .content-section h2 {
+                font-size: 25px;
+            }
+
+            .legal-card {
+                padding: 22px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-copy {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="nav-inner">
+
+            <a href="index.html">
+                <img
+                    src="assets/branding/Bonkisoft_Logo_Transparent.png"
+                    alt="Bonkisoft"
+                    class="brand-logo"
+                >
+            </a>
+
+            <a
+                href="index.html"
+                class="back-link"
+            >
+                ← Back to Project
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         CONTENT
+    ========================== -->
+
+    <main>
+
+        <div class="eyebrow">
+            La Dynastie des Wookas — The Game
+        </div>
+
+        <h1>
+            Copyright & Intellectual Property
+        </h1>
+
+        <p class="intro">
+            This page identifies the principal intellectual property
+            associated with <em>La Dynastie des Wookas — The Game</em>
+            and distinguishes the original literary work from the
+            game adaptation and its development materials.
+        </p>
+
+
+        <!-- =========================
+             ORIGINAL WORK
+        ========================== -->
+
+        <section class="content-section">
+
+            <h2>
+                Original Literary Work
+            </h2>
+
+            <p>
+                <em>La Dynastie des Wookas</em> is the original literary
+                work created by <strong>Laurie-Alice Dumas</strong>.
+            </p>
+
+            <div class="legal-card">
+
+                <strong>
+                    La Dynastie des Wookas
+                </strong>
+
+                <p>
+                    Original literary work by Laurie-Alice Dumas.
+                </p>
+
+                <div class="copyright-line">
+                    © Laurie-Alice Dumas — All rights reserved.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GAME ADAPTATION
+        ========================== -->
+
+        <section class="content-section">
+
+            <h2>
+                Game Adaptation
+            </h2>
+
+            <p>
+                <em>La Dynastie des Wookas — The Game</em> is a game
+                adaptation project developed by
+                <strong>Bonkisoft Games</strong> in collaboration with
+                <strong>Laurie-Alice Dumas</strong>.
+            </p>
+
+            <p>
+                Rights relating to the adaptation of the literary work
+                are subject to the agreement and permissions established
+                between the relevant parties.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             BONKISOFT MATERIALS
+        ========================== -->
+
+        <section class="content-section">
+
+            <h2>
+                Game Development Materials
+            </h2>
+
+            <p>
+                Unless otherwise stated, original materials created
+                specifically for the game development project by
+                Bonkisoft Games may include:
+            </p>
+
+            <div class="legal-card">
+
+                <p>
+                    • game code and software implementation<br>
+                    • game design and gameplay systems<br>
+                    • prototype and development builds<br>
+                    • game-specific interface and UI design<br>
+                    • original technical implementation<br>
+                    • original development documentation<br>
+                    • game-specific promotional and presentation materials
+                </p>
+
+                <div class="copyright-line">
+                    © Bonkisoft Games, 2026–2028 — All rights reserved,
+                    except where otherwise stated.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             THIRD PARTY
+        ========================== -->
+
+        <section class="content-section">
+
+            <h2>
+                Third-Party Materials
+            </h2>
+
+            <p>
+                Third-party trademarks, software, libraries, fonts,
+                services, artwork, photographs, sounds, music and other
+                materials remain the property of their respective owners
+                and are subject to their applicable licenses or rights.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             RESTRICTIONS
+        ========================== -->
+
+        <section class="content-section">
+
+            <h2>
+                Use of Project Materials
+            </h2>
+
+            <p>
+                No material published on this website should be interpreted
+                as granting permission to reproduce, redistribute,
+                modify, publish, commercially exploit or otherwise use
+                protected intellectual property without the appropriate
+                authorization or license.
+            </p>
+
+            <p>
+                This includes, where applicable, the literary work,
+                characters, names, story elements, game materials,
+                artwork, source code, promotional assets and other
+                protected project content.
+            </p>
+
+            <div class="notice">
+                Public availability of a file or image on this website
+                or on GitHub does not by itself grant permission for
+                commercial use, redistribution or creation of derivative
+                works.
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="content-section">
+
+            <h2>
+                Copyright or Licensing Requests
+            </h2>
+
+            <p>
+                Requests concerning the use, licensing or reproduction
+                of project materials should be directed to the relevant
+                rights holder or authorized representative.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             DISCLAIMER
+        ========================== -->
+
+        <section class="content-section">
+
+            <h2>
+                Notice
+            </h2>
+
+            <p>
+                This page is intended as a general identification of
+                project rights and ownership. Specific rights, licenses,
+                permissions and contractual arrangements may define the
+                applicable scope of use for particular materials.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-inner">
+
+            <a href="index.html">
+                <img
+                    src="assets/branding/Bonkisoft_Logo_Transparent.png"
+                    alt="Bonkisoft"
+                    class="footer-logo"
+                >
+            </a>
+
+            <div class="footer-copy">
+
+                <div>
+                    La Dynastie des Wookas — The Game
+                </div>
+
+                <div>
+                    Bonkisoft Games · In development · Target Release Q1 2028
+                </div>
+
+                <div>
+                    <a href="copyright.html">
+                        Copyright & Intellectual Property
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
