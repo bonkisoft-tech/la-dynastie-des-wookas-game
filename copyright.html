@@ -58,8 +58,10 @@
             left: 0;
             width: 100%;
             z-index: 1000;
+
             background: rgba(4, 12, 9, 0.82);
             backdrop-filter: blur(12px);
+
             border-bottom: 1px solid rgba(255,255,255,0.08);
         }
 
@@ -83,7 +85,9 @@
             font-size: 11px;
             letter-spacing: 1.8px;
             text-transform: uppercase;
+
             color: rgba(255,255,255,0.72);
+
             transition: color 0.2s ease;
         }
 
@@ -98,6 +102,7 @@
         main {
             width: min(900px, calc(100% - 40px));
             margin: auto;
+
             padding: 150px 0 90px;
         }
 
@@ -150,6 +155,7 @@
 
         .content-section p {
             margin-bottom: 15px;
+
             color: rgba(255,255,255,0.68);
             font-size: 16px;
         }
@@ -173,8 +179,8 @@
             border-left: 2px solid rgba(255,255,255,0.22);
 
             background: rgba(255,255,255,0.025);
-            color: rgba(255,255,255,0.60);
 
+            color: rgba(255,255,255,0.60);
             font-size: 14px;
         }
 
@@ -186,6 +192,16 @@
             letter-spacing: 1px;
 
             color: rgba(255,255,255,0.48);
+        }
+
+        .rights-list {
+            margin: 18px 0 0 20px;
+            color: rgba(255,255,255,0.68);
+            font-size: 16px;
+        }
+
+        .rights-list li {
+            margin-bottom: 8px;
         }
 
         /* =========================
@@ -224,6 +240,10 @@
             text-align: right;
         }
 
+        .footer-copy a:hover {
+            color: #ffffff;
+        }
+
         /* =========================
            MOBILE
         ========================== */
@@ -252,6 +272,10 @@
 
             .legal-card {
                 padding: 22px;
+            }
+
+            .rights-list {
+                margin-left: 18px;
             }
 
             .footer-inner {
@@ -312,14 +336,46 @@
 
         <p class="intro">
             This page identifies the principal intellectual property
-            associated with <em>La Dynastie des Wookas — The Game</em>
+            associated with <em>La Dynastie des Wookas — The Game</path>
             and distinguishes the original literary work from the
             game adaptation and its development materials.
         </p>
 
 
         <!-- =========================
-             ORIGINAL WORK
+             PROJECT DEVELOPER
+        ========================== -->
+
+        <section class="content-section">
+
+            <h2>
+                Project Developer
+            </h2>
+
+            <div class="legal-card">
+
+                <p>
+                    <strong>Bonkisoft Games</strong>
+                </p>
+
+                <p>
+                    Individual developer:
+                    <strong>Bojan Brankovic</strong>
+                </p>
+
+                <p>
+                    Bonkisoft Games is the project and development
+                    identity used by Bojan Brankovic as an individual
+                    developer.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ORIGINAL LITERARY WORK
         ========================== -->
 
         <section class="content-section">
@@ -335,9 +391,11 @@
 
             <div class="legal-card">
 
-                <strong>
-                    La Dynastie des Wookas
-                </strong>
+                <p>
+                    <strong>
+                        La Dynastie des Wookas
+                    </strong>
+                </p>
 
                 <p>
                     Original literary work by Laurie-Alice Dumas.
@@ -365,21 +423,25 @@
             <p>
                 <em>La Dynastie des Wookas — The Game</em> is a game
                 adaptation project developed by
-                <strong>Bonkisoft Games</strong> in collaboration with
-                <strong>Laurie-Alice Dumas</strong>.
+                <strong>Bonkisoft Games</strong>,
+                represented by <strong>Bojan Brankovic</strong> as an
+                individual developer, in collaboration with
+                <strong>Laurie-Alice Dumas</strong>, author of the
+                original literary work.
             </p>
 
             <p>
-                Rights relating to the adaptation of the literary work
-                are subject to the agreement and permissions established
-                between the relevant parties.
+                Rights relating to the adaptation of the original
+                literary work are subject to the agreements,
+                permissions and rights established between the
+                relevant parties.
             </p>
 
         </section>
 
 
         <!-- =========================
-             BONKISOFT MATERIALS
+             GAME DEVELOPMENT MATERIALS
         ========================== -->
 
         <section class="content-section">
@@ -391,24 +453,48 @@
             <p>
                 Unless otherwise stated, original materials created
                 specifically for the game development project by
-                Bonkisoft Games may include:
+                <strong>Bonkisoft Games</strong>, represented by
+                <strong>Bojan Brankovic</strong> as an individual
+                developer, may include:
             </p>
 
             <div class="legal-card">
 
-                <p>
-                    • game code and software implementation<br>
-                    • game design and gameplay systems<br>
-                    • prototype and development builds<br>
-                    • game-specific interface and UI design<br>
-                    • original technical implementation<br>
-                    • original development documentation<br>
-                    • game-specific promotional and presentation materials
-                </p>
+                <ul class="rights-list">
+
+                    <li>
+                        Game code and software implementation
+                    </li>
+
+                    <li>
+                        Game design and gameplay systems
+                    </li>
+
+                    <li>
+                        Prototype and development builds
+                    </li>
+
+                    <li>
+                        Game-specific interface and UI design
+                    </li>
+
+                    <li>
+                        Original technical implementation
+                    </li>
+
+                    <li>
+                        Original development documentation
+                    </li>
+
+                    <li>
+                        Game-specific promotional and presentation materials
+                    </li>
+
+                </ul>
 
                 <div class="copyright-line">
-                    © Bonkisoft Games, 2026–2028 — All rights reserved,
-                    except where otherwise stated.
+                    © Bonkisoft Games / Bojan Brankovic, 2026–2028 —
+                    All rights reserved, except where otherwise stated.
                 </div>
 
             </div>
@@ -417,7 +503,7 @@
 
 
         <!-- =========================
-             THIRD PARTY
+             THIRD-PARTY MATERIALS
         ========================== -->
 
         <section class="content-section">
@@ -428,16 +514,17 @@
 
             <p>
                 Third-party trademarks, software, libraries, fonts,
-                services, artwork, photographs, sounds, music and other
-                materials remain the property of their respective owners
-                and are subject to their applicable licenses or rights.
+                services, artwork, photographs, sounds, music and
+                other materials remain the property of their respective
+                owners and are subject to their applicable licenses,
+                permissions or other rights.
             </p>
 
         </section>
 
 
         <!-- =========================
-             RESTRICTIONS
+             USE OF PROJECT MATERIALS
         ========================== -->
 
         <section class="content-section">
@@ -447,32 +534,61 @@
             </h2>
 
             <p>
-                No material published on this website should be interpreted
-                as granting permission to reproduce, redistribute,
-                modify, publish, commercially exploit or otherwise use
-                protected intellectual property without the appropriate
-                authorization or license.
+                No material published on this website, this GitHub
+                repository or associated project pages should be
+                interpreted as granting permission to reproduce,
+                redistribute, modify, publish, commercially exploit
+                or otherwise use protected intellectual property
+                without the appropriate authorization or license.
             </p>
 
             <p>
-                This includes, where applicable, the literary work,
+                This may include, where applicable, the literary work,
                 characters, names, story elements, game materials,
                 artwork, source code, promotional assets and other
                 protected project content.
             </p>
 
             <div class="notice">
-                Public availability of a file or image on this website
-                or on GitHub does not by itself grant permission for
-                commercial use, redistribution or creation of derivative
-                works.
+                Public availability of a file, image, artwork,
+                document or source code on this website or on GitHub
+                does not by itself grant permission for commercial use,
+                redistribution or creation of derivative works.
             </div>
 
         </section>
 
 
         <!-- =========================
-             CONTACT
+             COLLABORATION
+        ========================== -->
+
+        <section class="content-section">
+
+            <h2>
+                Development Collaboration
+            </h2>
+
+            <p>
+                The project is developed by
+                <strong>Bonkisoft Games</strong>,
+                represented by <strong>Bojan Brankovic</strong> as an
+                individual developer, in collaboration with
+                <strong>Laurie-Alice Dumas</strong>.
+            </p>
+
+            <p>
+                The respective rights and permissions concerning the
+                original literary work and the game adaptation are
+                determined by the applicable agreements between the
+                parties.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             COPYRIGHT OR LICENSING REQUESTS
         ========================== -->
 
         <section class="content-section">
@@ -482,16 +598,17 @@
             </h2>
 
             <p>
-                Requests concerning the use, licensing or reproduction
-                of project materials should be directed to the relevant
-                rights holder or authorized representative.
+                Requests concerning the use, reproduction, licensing
+                or other authorized use of project materials should
+                be directed to the relevant rights holder or authorized
+                representative.
             </p>
 
         </section>
 
 
         <!-- =========================
-             DISCLAIMER
+             NOTICE
         ========================== -->
 
         <section class="content-section">
@@ -501,10 +618,20 @@
             </h2>
 
             <p>
-                This page is intended as a general identification of
-                project rights and ownership. Specific rights, licenses,
-                permissions and contractual arrangements may define the
-                applicable scope of use for particular materials.
+                This page is intended as a general public notice
+                identifying the principal rights and project
+                relationships associated with
+                <em>La Dynastie des Wookas — The Game</em>.
+            </p>
+
+            <p>
+                Specific ownership, licensing, adaptation,
+                distribution and other rights may be governed by
+                separate written agreements and applicable law.
+            </p>
+
+            <p>
+                This page does not replace or modify any such agreement.
             </p>
 
         </section>
@@ -535,7 +662,8 @@
                 </div>
 
                 <div>
-                    Bonkisoft Games · In development · Target Release Q1 2028
+                    Bonkisoft Games — Bojan Brankovic ·
+                    In development · Target Release Q1 2028
                 </div>
 
                 <div>
