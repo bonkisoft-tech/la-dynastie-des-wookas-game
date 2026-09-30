@@ -177,16 +177,7 @@
             rgba(4, 10, 8, 0.18) 100%
         );
 
-            .hero-layout {
-    grid-template-columns: 1fr;
-    gap: 45px;
-    padding: 120px 0 60px;
-}
-
-.hero-icon {
-    width: min(360px, 82vw);
-}
-}
+    }
         .hero-content {
             position: relative;
             z-index: 2;
@@ -345,52 +336,7 @@
            BRANDING
         ========================== */
 
-        .branding {
-            background:
-                radial-gradient(circle at 50% 0%, rgba(33, 120, 91, 0.18), transparent 40%),
-                #07110d;
-        }
-
-       .branding-grid {
-    margin-top: 45px;
-    display: flex;
-    justify-content: center;
-}
-
-        .branding-card {
-            min-height: 330px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 35px;
-            background: rgba(255,255,255,0.035);
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-
-        .branding-card.dark {
-            background: #040907;
-        }
-
-        .branding-card img {
-            max-height: 240px;
-            width: auto;
-            object-fit: contain;
-        }
-
-        .branding-card.logo-card img {
-            width: min(430px, 90%);
-            max-height: none;
-        }
-
-        .branding-caption {
-            margin-top: 12px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 10px;
-            letter-spacing: 1.8px;
-            text-transform: uppercase;
-            color: rgba(255,255,255,0.52);
-        }
-
+       
         /* =========================
            VISUAL DIRECTION
         ========================== */
@@ -555,6 +501,16 @@
                 font-size: 17px;
             }
 
+             .hero-layout {
+            grid-template-columns: 1fr;
+            gap: 45px;
+            padding: 120px 0 60px;
+            }
+
+            .hero-icon {
+            width: min(360px, 82vw);
+            }
+
             .project-grid {
                 grid-template-columns: 1fr;
             }
@@ -600,19 +556,18 @@
                 >
             </a>
 
-            <nav class="nav-links">
-                <a href="#project">Project</a>
-                <a href="#branding">Branding</a>
-                <a href="#visuals">Visuals</a>
-                <a href="#development">Development</a>
-                <a
-                    href="https://github.com/bonkisoft-tech/la-dynastie-des-wookas-game"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    GitHub
-                </a>
-            </nav>
+    <nav class="nav-links">
+    <a href="#project">Project</a>
+    <a href="#visuals">Visuals</a>
+    <a href="#development">Development</a>
+    <a
+        href="https://github.com/bonkisoft-tech/la-dynastie-des-wookas-game"
+        target="_blank"
+        rel="noopener"
+    >
+        GitHub
+    </a>
+</nav>
 
         </div>
     </header>
@@ -823,18 +778,6 @@
         <section id="branding" class="branding">
 
             <div class="container">
-
-                <div class="section-label">
-                    Official Branding
-                </div>
-
-                <h2 class="section-title">
-                    Wookas & Bonkisoft.
-                </h2>
-
-                <p class="section-text">
-                    Official visual identity used for the project.
-                </p>
 
                 <div class="branding-grid">
 
