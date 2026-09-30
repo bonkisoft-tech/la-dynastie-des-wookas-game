@@ -108,44 +108,85 @@
             align-items: flex-end;
         }
 
-       .hero-art {
+       .hero-background {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 58%;
-    height: 100%;
-    overflow: hidden;
+    inset: 0;
+    background:
+        radial-gradient(
+            circle at 72% 42%,
+            rgba(30, 112, 82, 0.30),
+            transparent 34%
+        ),
+        radial-gradient(
+            circle at 30% 70%,
+            rgba(15, 65, 49, 0.24),
+            transparent 38%
+        ),
+        linear-gradient(
+            135deg,
+            #06100c 0%,
+            #091b14 50%,
+            #04100b 100%
+        );
     z-index: 0;
 }
 
-.hero-art img {
-    width: 100%;
-    height: 100%;
-    max-width: none;
+.hero-layout {
+    position: relative;
+    z-index: 2;
+    width: min(1180px, calc(100% - 40px));
+    min-height: 100vh;
+    margin: auto;
+    padding: 120px 0 70px;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content {
+    padding: 0;
+}
+
+.hero-icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-icon {
+    width: min(440px, 80%);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    object-position: left center;
+    border-radius: 28px;
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.50),
+        0 0 60px rgba(38, 150, 109, 0.16);
+    border: 1px solid rgba(255,255,255,0.12);
 }
 
         .hero-overlay {
-            position: absolute;
-            inset: 0;
-            z-index: 1;
-            background:
-                linear-gradient(
-                    90deg,
-                    rgba(2, 8, 6, 0.78) 0%,
-                    rgba(2, 8, 6, 0.38) 38%,
-                    rgba(2, 8, 6, 0.08) 70%,
-                    rgba(2, 8, 6, 0.18) 100%
-                ),
-                linear-gradient(
-                    180deg,
-                    rgba(2, 8, 6, 0.16) 0%,
-                    rgba(2, 8, 6, 0.05) 55%,
-                    rgba(2, 8, 6, 0.88) 100%
-                );
-        }
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 10, 8, 0.10) 0%,
+            rgba(4, 10, 8, 0.00) 55%,
+            rgba(4, 10, 8, 0.18) 100%
+        );
 
+            .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 120px 0 60px;
+}
+
+.hero-icon {
+    width: min(360px, 82vw);
+}
+}
         .hero-content {
             position: relative;
             z-index: 2;
@@ -583,18 +624,78 @@
 
     <main id="top">
 
-        <section class="hero">
+   <section class="hero">
 
-    <div class="hero-art">
-        <img
-            src="assets/promo/Wookas_Hero_Key_Art_1920x1080.jpg"
-            alt="La Dynastie des Wookas Hero Key Art"
-        >
-    </div>
+    <div class="hero-background"></div>
 
     <div class="hero-overlay"></div>
 
-    <div class="hero-content">
+    <div class="hero-layout">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Bonkisoft Games
+            </div>
+
+            <h1 class="hero-heading">
+                An interactive fantasy adventure.
+            </h1>
+
+            <p class="hero-subtitle">
+                A game adaptation project inspired by
+                <em>La Dynastie des Wookas</em>.
+            </p>
+
+            <div class="hero-meta">
+                <span class="meta-pill">
+                    Game Project
+                </span>
+
+                <span class="meta-pill">
+                    In Development
+                </span>
+
+                <span class="meta-pill">
+                    Target Release — Q1 2028
+                </span>
+            </div>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#project"
+                    class="button button-primary"
+                >
+                    Discover the Project
+                </a>
+
+                <a
+                    href="https://github.com/bonkisoft-tech/la-dynastie-des-wookas-game"
+                    target="_blank"
+                    rel="noopener"
+                    class="button button-secondary"
+                >
+                    View on GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-icon-wrap">
+
+            <img
+                src="assets/promo/Wookas_Game_Icon_512.png"
+                alt="La Dynastie des Wookas Game Icon"
+                class="hero-icon"
+            >
+
+        </div>
+
+    </div>
+
+</section>
 
                 <div class="eyebrow">
                     Bonkisoft Games
